@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Grid Layout</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css">
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 20px;
+      background-color: #ffffff;
+    }
+
+    .box {
+      border: 1px solid #000000;
+      padding: 15px;
+      text-align: center;
+    }
+
+    /* Výrazné barvy */
+    .box-red {
+      background-color: #03eb50;
+      color: rgb(0, 0, 0);
+    }
+
+    .box-green {
+      background-color: #00f30c;
+    }
+
+    .box-blue {
+      background-color: #08ec5f;
+      color: rgb(0, 0, 0);
+    }
+
+    .box-yellow {
+      background-color: #06f87f;
+    }
+
+    .box-purple {
+      background-color: #08f185;
+      color: rgb(0, 0, 0);
+    }
+
+    .spacing {
+      margin-bottom: 30px;
+    }
+
+    .hlavicka {
+      background-color: #00e932;
+      color: rgb(0, 0, 0);
+      padding: 15px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .paticka {
+      background-color: #00fa2a;
+      color: rgb(0, 0, 0);
+      padding: 15px;
+      margin-top: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!--Hlavička-->
+  <div class="row center-xs">
+    <div class="col-xs-12 hlavicka">HLAVIČKA</div>
+  </div>
+
+  <!--Řádek 1 – 3 sloupce-->
+  <div class="row spacing">
+    <div class="col-xs-12 col-md-4 box box-red">Sloupec 1</div>
+    <div class="col-xs-12 col-md-4 box box-green">Sloupec 2</div>
+    <div class="col-xs-12 col-md-4 box box-blue">Sloupec 3</div>
+  </div>
+
+  <!--Řádek 2 – 8 a 4 dílky-->
+  <div class="row">
+    <div class="col-xs-12 col-md-8 box box-yellow">8 dílků</div>
+    <div class="col-xs-12 col-md-4 box box-purple">4 dílky</div>
+  </div>
+
+  <!--Řádek 3 – 4 sloupce stejně široké-->
+  <div class="row spacing">
+    <div class="col-xs-12 col-sm-3 box box-green">1</div>
+    <div class="col-xs-12 col-sm-3 box box-green">2</div>
+    <div class="col-xs-12 col-sm-3 box box-green">3</div>
+    <div class="col-xs-12 col-sm-3 box box-green">4</div>
+  </div>
+
+  <!--Řádek 4 – offset-->
+  <div class="row spacing">
+    <div class="col-xs-offset-2 col-xs-4 box box-blue">Offset 2</div>
+  </div>
+
+  <!--Řádek 5 – zarovnání start, center, end-->
+  <div class="row spacing start-xs">
+    <div class="col-xs-4 box box-yellow">Start</div>
+  </div>
+  <div class="row center-xs spacing">
+    <div class="col-xs-4 box box-yellow">Center</div>
+  </div>
+  <div class="row end-xs spacing">
+    <div class="col-xs-4 box box-yellow">End</div>
+  </div>
+
+  <!--Layout: hlavní obsah + panel-->
+  <div class="row spacing">
+    <div class="col-xs-12 col-md-8 box box-red">Hlavní obsah</div>
+    <div class="col-xs-12 col-md-4 box box-purple">Postranní panel</div>
+  </div>
+
+  <!--Patička-->
+  <div class="row center-xs">
+    <div class="col-xs-12 paticka">PATIČKA</div>
+  </div>
+
+</body>
+</html>
